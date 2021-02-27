@@ -1,0 +1,20 @@
+name: Worksites
+version: ${project.version}
+main: com.danieldusek.worksites.Worksites
+api-version: 1.14
+authors: [ dusekdan ]
+description: "Allows players to set up one or more /worksite places to fast travel between them. Configurable number of worksites per player via permissions, adjustable fees for use."
+website: https://danieldusek.com
+commands:
+  setworksite:
+    description: "Creates worksite for player to port to."
+    usage: "/setworksite [name]"
+  delworksite:
+    description: "Deletes worksite"
+    usage: "/delworksite [name]"
+  worksite:
+    description: "Ports player to the worksite"
+    usage: "/worksite [name]"
+  worksites:
+    description: "Lists all the worksites the player has created."
+    usage: "/worksites"

@@ -1,0 +1,9 @@
+key1: value
+key2: value
+key-list:
+  - "value1"
+  - "value2"
+key-list-empty: []
+key-nested:
+  key1-integer: 10
+  key2-string: "This is a default config. There are currently no configuration options available for this plugin."
