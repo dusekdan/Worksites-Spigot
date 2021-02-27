@@ -4,13 +4,13 @@ This player allows players to set up `/worksite [name]` ports via `/setworksite 
 
 TODO to make this plugin absolutely awesome:
 
-- Allow setting up different number of worksites per-player via permissions `worksites.multiple.NUMBER`.
-- Allow setting up public worksite for all players to use `/setworksite name public`
-- Allow setting up private worksite for only certain players to use `/setworksite name permission.to.check`
-- Allow setting up payment for use of `/setworksite` or `/worksite` commands
-- Allow setting up cooldown for use of either `/setworksite` or `/worksite` commands
+- DONE Allow setting up different number of worksites per-player via permissions `worksites.multiple.NUMBER`.
+- DONE Allow setting up public worksite for all players to use `/setworksite name public`
+- DONE Allow setting up private worksite for only certain players to use `/setworksite name permission.to.check`
+- FEATURE Allow setting up payment for use of `/setworksite` or `/worksite` commands
+- FEATURE Allow setting up cooldown for use of either `/setworksite` or `/worksite` commands
 
-- Allow resetting cooldown to players (based on permissions | price)
+- FEATURE Allow resetting cooldown to players (based on permissions | price)
     - `/worksiteresetcd [player:worksite]` - to be used by privileged player to reset cd for someone else (no fee)
     - `/worksiteresetcd worksite` - to be used by player to pay for cd reset
 
@@ -27,8 +27,8 @@ Finishing touches:
   - DONE autocomplete for worksite/delworksite
 
 - Hooking into Vault to use installed Economy && Permissions (if needed) -> not needed in the end
-- Expand basic command structure template for intellij
-- Caching and updating of cache on playerjoin/playerleaves (write-through on important updates)
+- DONE Expand basic command structure template for intellij
+- DONE Caching and updating of cache on playerjoin/playerleaves (write-through on important updates) - pretty retarded way of going about this without hot-reload feature (doesnt really matter though, missing LuckPerms hot reload support is sabotaging the testing anyways)
 
 ## Player worksite data file - concept
 
